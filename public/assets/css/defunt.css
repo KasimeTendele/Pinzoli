@@ -1,0 +1,32 @@
+:root {
+    /* --blue:#0188DF; */
+    --blue: #2b7773;
+    --black: #474b4e;
+    --violet: #D65DB1;
+    --jaune: #E5BC46;
+    --gradient: linear-gradient( 45deg, #d65db1, #ff6f91, #ff9671, #ffc75f);
+}
+
+.pa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(assets/img/cimn.jpg), linear-gradient(var(--black), var(--blue)) no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-blend-mode: multiply;
+}
+
+.pa .card {
+    width: 20rem;
+    top: 150px;
+    left: 30px;
+}
+
+@media (max-width: 991px) {
+    .pa .card {
+        width: 20rem;
+        top: 150px;
+        left: 30px;
+    }
+}

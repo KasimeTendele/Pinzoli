@@ -1,0 +1,75 @@
+/* .review {
+    background: url(image/another_day_by_yiyaro-d5qlyx8.jpg), linear-gradient(var(--black), var(--black)) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+} */
+
+:root {
+    /* --blue:#0188DF; */
+    --blue: #2b7773;
+    --black: #474b4e;
+    --violet: #D65DB1;
+    --jaune: #E5BC46;
+    --gradient: linear-gradient( 45deg, #d65db1, #ff6f91, #ff9671, #ffc75f);
+}
+
+.review .heading {
+    color: #232121;
+    /* color: var(--violet); */
+}
+
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+    /* flex-direction: column; */
+}
+
+.review .box-container .box {
+    background: var(--violet);
+    width: 19rem;
+    margin: 3rem 1rem;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.review .box-container .box img {
+    position: absolute;
+    bottom: -5rem;
+    left: -1rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box p {
+    font-size: 1rem;
+    color: rgb(232, 230, 230);
+    font-weight: bold;
+}
+
+.review .box-container .box h3 {
+    text-align: end;
+    color: var(--blue);
+}
+
+.review .box-container .box span {
+    text-align: end;
+    color: var(--black);
+    display: block;
+    font-size: 1rem;
+}
+
+.review .box-container .box::before {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: .4rem;
+    height: 2rem;
+    width: 2rem;
+    background: var(--violet);
+    transform: rotate(45deg);
+}
